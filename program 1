@@ -1,0 +1,31 @@
+program for finding the sum of fraction of n numbers.
+
+
+#include<stdio.h>
+
+struct num
+{
+    int upper[10];
+    int lower[10];
+};
+
+void main()
+{
+struct num n;
+int i,size;
+float fraction=0.0000;
+
+printf("\n enter the size of the fraction:");
+scanf("%d",&size);
+
+printf("\n enter the fraction:");
+for(i=0;i<size;i++)
+{
+    scanf("%d%d",&n.upper[i],&n.lower[i]);
+    fraction=(float)(fraction+((float)(n.upper[i])/(n.lower[i])));
+
+}
+
+printf("\n the sum :%lf",fraction);
+
+}
